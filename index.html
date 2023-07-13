@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+    <div class="main__container">
+      <h1>Calculator</h1>
+
+      <div class="container__fields">
+        <div class="fields__numbers">
+          <label class="numbers__label" for="number1">Numero 1</label>
+          <input class="numbers__input" id="number1" name="number1" type="number" />
+        </div>
+
+        <select name="operators" id="operators">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="/">/</option>
+          <option value="*">x</option>
+        </select>
+
+        <div class="fields__numbers">
+          <label class="numbers__label" for="number2">Numero 2</label>
+          <input class="numbers__input" id="number2" name="number2" type="number" />
+        </div>
+      </div>
+
+      <div class="container__buttons">
+        <button class="buttons__button" id="result" type="button">
+          Resultado
+        </button>
+        <button class="buttons__button" id="reset" type="reset">
+          <!--
+            -Se cambio el tipo de "button" a "reset"
+            -No funciona el boton de reset
+          -->
+          Resetear
+        </button>
+      </div>
+      <div class="container__resultArea" name="resultField" id="resultField"></div>
+    </div>
+  </main>
+</body>
+
+<script src="index.js"></script>
+
+</html>
